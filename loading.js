@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#loginbtn").click(function() {
         //e.preventDefault();
-        alert("aaaa");
+       // alert("aaaa");
         var first_name = $('#usertxt').val();
         var pass_wd = $('#passtxt').val();
         console.log("aaa");
