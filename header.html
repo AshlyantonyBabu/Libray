@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    .navbar-custom {
+    background-color:#311280;
+    /* change the brand and text color */
+
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+.rect{
+    background-color:#1a074a;
+    height: 200px;
+    
+}
+h1{
+    color: white;
+    position: absolute;
+    margin-left: 110px;
+    font-style: italic;
+    top:90px;
+    font-size: 50px;
+} 
+.rect1{
+    position: absolute;
+    margin-left: 250px;
+   height: 80px;
+   width: 210px;
+   top:90px;
+   background-color: #311280;
+}
+#outer{
+    background-color: #6c89a1;
+}
+#inner{
+    position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+   
+}
+#table1
+        {
+            border: 2px solid blue;
+        }
+        .trless{
+            border: none;
+        }
+        .r{
+            text-align: center;
+        }
+</style>
+<script>
+    function valid()
+    {
+        e=" "
+        txt=" * Required Field";
+        var first_name = $('#usertxt').val();
+        var pass_wd = $('#passtxt').val();
+        console.log("aaa");
+       
+     
+        if (first_name.length < 1){
+            $('#us2').text(txt);
+        }
+        if(pass_wd < 1) {
+         
+          $("#us4").text(txt);
+        }
+       else{
+        $('#us2').text(e);
+          $("#us4").text(e);
+       }
+    }
+</script>
+
+</head>
+<body>
+        
+<!-- Grey with black text -->
+
+<div class="container">
+        <div class="page-header">
+            <!-- <div class="col col-sm-12"> -->
+<nav class="navbar navbar-expand-sm navbar-custom">
+        <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="header.html">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">REGISTER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="librarymng.html">VIEW BOOKS</a>
+                </li>
+                
+              </ul>
+     </nav>
+                    
+                    <div class="rect">
+                        <div class="row">
+                            <div class="col col-12 col-sm-6">
+                            <h1 >Library</h1>
+                        </div>
+                            <div class="col col-12 col-sm-6 ">
+                                    <div class="rect1 d-flex justify-content-center"></div>.
+
+                                           
+                        </div>
+             </div>
+                    </div>
+             <div id="outer">
+                    
+                        <div class="container">
+                            <div class="row">
+                                
+                                        <div class="col col-sm-1">
+                                                
+
+                                    </div>
+                                    <div class="col col-sm-10"id="inner">
+                                        <div id="inner2">
+
+                                            <h2 style="text-align: center">LOGIN</h2>
+    <div class="r d-flex justify-content-center">
+    <div class="container">
+        <div class="row d-flex justify-content-center" style="margin-top: 50px">
+            <div class="col col-6 "id="table1">
+           <table class="table d-flex justify-content-center"  >
+               <tr class="trless">
+               <td>
+                <label id="us1">USERNAME</label>
+            </td>
+            <td>
+                <input type="text" class="form-control " name="usertxt" id="usertxt" >
+            </td>
+            <td>
+                    <label id="us2" class="error"></label>
+                </td>
+            </tr>
+            <tr class="trless">
+                <td>
+                        <label id="us3" >PASSWORD</label>
+                </td>
+                <td>
+                        <input type="password" class="form-control " id="passtxt">
+                    </td>
+                    <td>
+                            <span id="us4" class="error">        </span>
+                    </td>
+                   
+            </tr>
+            <tr>
+              <td></td> <td> <button type="button" class="btn btn-primary" id="loginbtn" onclick="valid();">LOGIN</button></td>
+            </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                    <div class="col col-sm-1">
+                                            
+
+                                </div>
+
+                                    
+                                    
+                                
+                            </div>
+                        </div>
+
+                            
+
+                    </div>
+                    
+             </div>
+            </div>
+         </div>
+     <!-- </div> -->
+
+     <script src="./loading.js"></script> 
+      
+</body>
+</html>
